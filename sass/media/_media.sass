@@ -1,4 +1,29 @@
-
 @import "1440"
 
+@media screen and (max-width: 1200px)
+  .main
+    &__box
+      width: 510px
+    &__block
+      width: 52%
+    &__img
+      width: auto
+      left: 30%
+
 @import "991"
+
+@media screen and (max-width: 767px)
+  .quiz
+    &__row
+      display: flex
+      flex-direction: column
+
+@media screen and (max-width: 575px)
+  .main
+    &__subtitle-sup, &__subtitle
+      max-width: 200px
+    &__box
+      overflow: hidden
+    &__img
+      right: auto
+      left: calc(50% + 20px)
